@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.toggle{
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 50px;
+    height: 2.4rem;
+    width: 4.4rem;
+    transition: border 1s;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
+.button{
+    border-radius: 50px;
+    height:  2rem;
+    width: 2rem;
+    box-shadow: 0px 0px 6px 4px rgb(223, 223, 223);
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    transition: margin-left 500ms;
+
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ label .toggle{
+    background-color:#5BC236;
+    border: 1px solid #5BC236;
+}
+
+input:checked ~ label .button{
+    background-color: white;
+    margin-left: 2.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    box-shadow: none;
+}
